@@ -1,0 +1,4 @@
+Show the stadium and the number of goals scored in each stadium.
+
+select stadium,count(*) 
+from goal join game on id=matchid group by stadium
