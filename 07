@@ -1,0 +1,5 @@
+List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'
+
+select player 
+from goal join game on id=matchid 
+where stadium='National Stadium, Warsaw'
