@@ -1,0 +1,5 @@
+For every match where 'GER' scored, show matchid, match date and the number of goals scored by 'GER'
+
+select matchid,mdate,count(*) 
+from goal join game on matchid=id 
+where teamid='GER' group by mdate,matchid
