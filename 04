@@ -1,0 +1,4 @@
+Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'
+
+select team1,team2,player 
+from goal join game on id=matchid where player like 'Mario%'
