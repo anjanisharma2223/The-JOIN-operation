@@ -1,0 +1,5 @@
+Show teamname and the total number of goals scored.
+
+SELECT teamname, count(*)
+  FROM goal JOIN eteam ON teamid=id
+ group BY teamname
